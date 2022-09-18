@@ -6,6 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-1 (HTML - First Web Page)</title>
+
+
+    <style>
+      
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+        :root{
+            --dark:#264248;
+            --yellow:#fdae38;
+            --green:#4fa3a5;
+            
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            font-family: 'Roboto', sans-serif;
+            /* font-family: 'Courier New', Courier, monospace; */
+        }
+
+        header,footer{
+            background-color: var(--dark);
+            color:var(--yellow);
+            padding:10px;
+        }
+
+        h1,h2,nav{
+            text-align:center;
+            padding:15px;
+        }
+
+        h1{
+            font-size: 36px;
+        }
+
+        header nav a{
+            color:white;
+            text-decoration: none;
+            margin:0 20px;
+            font-weight: 700;
+        }
+
+        header nav a:hover{
+            color:var(--yellow);
+        }
+
+        .users{
+            margin:20px 5px;
+        }
+
+        .users a{
+            text-decoration: none;
+            color:var(--dark);
+            font-size: 20px;
+            font-weight: 700;
+            margin:10px;
+        }
+
+        a:hover{
+            color:var(--yellow);
+        }
+
+        h2{
+            font-weight: 700;
+            color:var(--dark);
+            margin:20px 0 10px 0;
+        }
+
+        p{
+            text-align: justify;
+            margin:15px 0;
+        }
+
+        section{
+            margin:20px 30px 30px 30px;
+        }
+
+        section img{
+            width:350px;
+            height: 250px;
+            /* border-radius: 50%; */
+            border-radius: 12px;
+            margin:15px 0;
+        }
+
+
+        .courierfont{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+        }
+
+        .italicsfont{
+            font-style: italic;
+        }
+
+        footer a{
+            color:white;
+            text-decoration: none;
+            margin:20px;
+            
+        }
+
+        footer div{
+            text-align: center;
+            padding:0px 0 5px 0; 
+        }
+
+    </style>
 </head>
 
 <body>
@@ -14,26 +123,85 @@
         <header>
             <h1>Tejinder Singh</h1>
             <nav>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Qualifications</a>
-                <a href="#">Experience</a>
-                <a href="#">Projects</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#qualifications">Qualifications</a>
+                <a href="#projects">Projects</a>
             </nav>
         </header>
 
         <!-- Top Users -->
-        <div class="users">
+        <section class="users">
             <a href="#">Barsha</a>
             <a href="#">Sneha</a>
             <a href="#">Raman</a>
-        </div>
+        </section>
 
         <!-- About Me -->
-        <div class="aboutme">
+        <section id="about">
             <h2>About Me</h2>
             <img src="./student.jpg" alt="">
-        </div>
+
+            <p class="courierfont">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit." Velit nostrum ipsum totam itaque voluptas eaque.
+            </p>
+
+            <p class="italicsfont">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam impedit dolorum ut, distinctio eius quia autem eaque hic quae magnam amet sequi recusandae dolores possimus commodi sapiente voluptas error esse! Vel minus accusantium suscipit similique deleniti ratione necessitatibus aperiam a saepe quaerat esse dolore, sequi enim laborum, dignissimos fuga nulla.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, a? Corrupti odio perferendis impedit ab nulla maxime veniam culpa iure amet obcaecati, magni consequuntur iste accusantium quis ex cum deserunt vitae sed facilis nisi dolore hic maiores! Atque odio recusandae blanditiis, eveniet dolores et vero officia? Asperiores sapiente iusto obcaecati quibusdam, voluptas laborum expedita beatae temporibus? Fugit similique non quaerat reprehenderit eos voluptatibus cupiditate quae porro quis repellat minima amet unde, nulla aliquam quasi recusandae hic iste, explicabo natus veniam dolorum corporis magnam temporibus asperiores. Officia mollitia autem eaque eveniet consequatur, odio, nam beatae minus corporis quasi iste explicabo in et quas omnis. Quia, corrupti labore reprehenderit molestiae libero consequuntur repudiandae nobis nam amet tenetur recusandae dignissimos expedita, neque quae et rem doloremque molestias. Aut consequatur veniam consequuntur omnis dolor odio quisquam accusantium cumque temporibus fugiat, nam cupiditate aliquid, minima repudiandae nesciunt voluptates distinctio voluptatum repellat earum! Praesentium, animi rerum.</p>
+        </section>
+
+        <hr>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio magni dolorum laborum recusandae sunt praesentium fuga asperiores, nisi incidunt ratione earum hic, modi autem consequuntur amet corporis ut! Rerum quod animi debitis quaerat voluptates maiores ipsum, veniam sit repellat. Inventore assumenda et sint vitae repudiandae, mollitia commodi earum provident.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nostrum impedit atque, similique fugit odio nesciunt voluptate modi exercitationem placeat dolor quae ex dolore voluptatum, autem nihil beatae, ad quo enim? Omnis cumque porro tenetur, nisi corrupti praesentium facilis blanditiis explicabo magnam eligendi tempore sit molestiae? Assumenda odit itaque dicta. Unde, eos eius quis similique omnis ullam commodi delectus, dolorem laudantium nemo iusto exercitationem obcaecati totam esse quaerat, illo quos distinctio reiciendis beatae sequi possimus dignissimos itaque! Unde nihil quibusdam error quae eaque beatae nesciunt vitae sint repellendus tenetur, architecto corrupti quisquam tempore itaque minus perferendis, officia in repellat amet adipisci tempora magnam minima? Facere aperiam id recusandae, exercitationem voluptate atque nam, consequuntur officiis iste mollitia sequi quas minus, maiores molestiae soluta numquam dolor rerum cumque suscipit ducimus. Obcaecati molestias quas nesciunt earum fugiat debitis non dolores, est quam animi in. Odio aperiam illo deserunt quis. Neque sed aperiam placeat soluta distinctio cupiditate provident consequuntur non nobis assumenda deserunt laborum possimus nulla iusto, eaque, nesciunt, esse vero facere est similique autem animi. Porro iste quasi saepe quibusdam dolores facilis voluptates.
+            </p>
+        </section>
+
+        <hr>
+
+
+        <!-- Qualification -->
+        <section id="qualifications">
+            <h2>Qualifications</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio magni dolorum laborum recusandae sunt praesentium fuga asperiores, nisi incidunt ratione earum hic, modi autem consequuntur amet corporis ut! Rerum quod animi debitis quaerat voluptates maiores ipsum, veniam sit repellat. Inventore assumenda et sint vitae repudiandae, mollitia commodi earum provident.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nostrum impedit atque, similique fugit odio nesciunt voluptate modi exercitationem placeat dolor quae ex dolore voluptatum, autem nihil beatae, ad quo enim? Omnis cumque porro tenetur, nisi corrupti praesentium facilis blanditiis explicabo magnam eligendi tempore sit molestiae? Assumenda odit itaque dicta. Unde, eos eius quis similique omnis ullam commodi delectus, dolorem laudantium nemo iusto exercitationem obcaecati totam esse quaerat, illo quos distinctio reiciendis beatae sequi possimus dignissimos itaque! Unde nihil quibusdam error quae eaque beatae nesciunt vitae sint repellendus tenetur, architecto corrupti quisquam tempore itaque minus perferendis, officia in repellat amet adipisci tempora magnam minima? Facere aperiam id recusandae, exercitationem voluptate atque nam, consequuntur officiis iste mollitia sequi quas minus, maiores molestiae soluta numquam dolor rerum cumque suscipit ducimus. Obcaecati molestias quas nesciunt earum fugiat debitis non dolores, est quam animi in. Odio aperiam illo deserunt quis. Neque sed aperiam placeat soluta distinctio cupiditate provident consequuntur non nobis assumenda deserunt laborum possimus nulla iusto, eaque, nesciunt, esse vero facere est similique autem animi. Porro iste quasi saepe quibusdam dolores facilis voluptates.
+            </p>
+        </section>
+
+        <hr>
+
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio magni dolorum laborum recusandae sunt praesentium fuga asperiores, nisi incidunt ratione earum hic, modi autem consequuntur amet corporis ut! Rerum quod animi debitis quaerat voluptates maiores ipsum, veniam sit repellat. Inventore assumenda et sint vitae repudiandae, mollitia commodi earum provident.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nostrum impedit atque, similique fugit odio nesciunt voluptate modi exercitationem placeat dolor quae ex dolore voluptatum, autem nihil beatae, ad quo enim? Omnis cumque porro tenetur, nisi corrupti praesentium facilis blanditiis explicabo magnam eligendi tempore sit molestiae? Assumenda odit itaque dicta. Unde, eos eius quis similique omnis ullam commodi delectus, dolorem laudantium nemo iusto exercitationem obcaecati totam esse quaerat, illo quos distinctio reiciendis beatae sequi possimus dignissimos itaque! Unde nihil quibusdam error quae eaque beatae nesciunt vitae sint repellendus tenetur, architecto corrupti quisquam tempore itaque minus perferendis, officia in repellat amet adipisci tempora magnam minima? Facere aperiam id recusandae, exercitationem voluptate atque nam, consequuntur officiis iste mollitia sequi quas minus, maiores molestiae soluta numquam dolor rerum cumque suscipit ducimus. Obcaecati molestias quas nesciunt earum fugiat debitis non dolores, est quam animi in. Odio aperiam illo deserunt quis. Neque sed aperiam placeat soluta distinctio cupiditate provident consequuntur non nobis assumenda deserunt laborum possimus nulla iusto, eaque, nesciunt, esse vero facere est similique autem animi. Porro iste quasi saepe quibusdam dolores facilis voluptates.
+            </p>
+        </section>
+
+        <footer>
+            <h3>Footer</h3>
+
+            <div>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://www.google.com/" target="_blank">Google</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://twitter.com/i/flow/login" target="_blank">Twitter</a>
+            </div>
+        </footer>
+
     </div>
 </body>
 
